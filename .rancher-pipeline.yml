@@ -1,0 +1,19 @@
+stages:
+- name: image and deploy
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: jb/numball
+      pushRemote: true
+      registry: 192.168.2.108:31164
+  when:
+    branch: {}
+    event:
+      include:
+      - tag
+timeout: 60
+branch:
+  include:
+  - master
+notification: {}
