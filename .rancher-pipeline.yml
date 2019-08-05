@@ -6,7 +6,7 @@ stages:
       buildContext: .
       tag: jb/numball
       pushRemote: true
-      registry: docker-registry.docker-registry.192.168.2.108.xip.io:31164
+      registry: docker-registry.docker-registry.192.168.2.108.xip.io
   when:
     branch: {}
     event: {}
