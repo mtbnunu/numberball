@@ -22,3 +22,5 @@ spec:
       containers:
         - name: numball
           image: docker.jaebae.net/jb/numball:latest
+        imagePullSecrets:
+          - name: docker-jaebae-net
