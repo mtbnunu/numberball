@@ -13,12 +13,12 @@ spec:
     rollingUpdate:
       maxUnavailable: 1
       maxSurge: 1
-    replicas: 3
-    template:
-      metadata:
-        labels:
-          app: numball
-      spec:
-        containers:
-          - name: numball
-            image: docker.jaebae.net/jb/numball:latest
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: numball
+    spec:
+      containers:
+        - name: numball
+          image: docker.jaebae.net/jb/numball:latest
