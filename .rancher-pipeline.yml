@@ -7,11 +7,13 @@ stages:
       tag: jb/numball
       pushRemote: true
       registry: docker.jaebae.net
-  - applyYamlConfig:
-      path: ./deployment.yaml
   when:
     branch: {}
     event: {}
+- name: deploy app
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
 timeout: 60
 branch:
   include:
