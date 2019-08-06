@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: jb/numball
+      tag: numball:1.1
       pushRemote: true
       registry: docker.jaebae.net
   when:
